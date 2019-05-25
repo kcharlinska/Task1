@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font: 300 16px/1.4 Verdana, sans-serif;
+  font: 300 16px/1.2 Verdana, sans-serif;
   color: #5c5c5c;
 }
 
@@ -29,15 +29,15 @@ body {
   width: 20%;
   height: 100%;
   padding: 20px;
-  background-color: #cbcbcb;
+  background-color: #dadada;
 }
 
 .wrapper {
   width: calc(100% - $menu-width);
   height: 100%;
   margin-left: 20%;
-  padding: 20px;
-  background-color: #e4e4e4;
+  padding: 30px;
+  background-color: #ededed;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: (auto)[5];
@@ -48,6 +48,7 @@ body {
 
 .wrapper *:not(:first-child) {
   padding: 20px;
+  border-radius: 4px;
   background-color: #fff;
 }
 

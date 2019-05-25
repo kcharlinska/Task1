@@ -9,7 +9,7 @@ body {
     left: 0;
     width: $menu-width;
     height: 100%;
-    padding: $paddings;
+    padding: 20px;
     background-color: $menu-bgc;
 }
 
@@ -17,7 +17,7 @@ body {
     width: calc(100% - $menu-width);
     height: 100%;
     margin-left: $menu-width;
-    padding: $paddings;
+    padding: 30px;
     background-color: $main-bgc;
     display: grid;
     grid-template: repeat(5, auto) / repeat(12, 1fr);
@@ -25,7 +25,8 @@ body {
 }
 
 .wrapper *:not(:first-child) {
-    padding: $paddings;
+    padding: 20px;
+    border-radius: 4px;
     background-color: $content-bgc;
 }
 
