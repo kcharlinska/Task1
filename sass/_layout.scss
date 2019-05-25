@@ -19,8 +19,36 @@ body {
     margin-left: $menu-width;
     padding: $paddings;
     background-color: $main-bgc;
+    display: grid;
+    grid-template: repeat(5, auto) / repeat(12, 1fr);
+    grid-row-gap: 15px;
 }
 
 .wrapper *:not(:first-child) {
+    padding: $paddings;
     background-color: $content-bgc;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 13;
+}
+
+.box {
+    grid-area: 2 / 5/ 3 / 9;
+}
+
+.aside {
+    grid-area: 3 / 1 / 6 / 3;
+}
+
+.article-left {
+    grid-area: 3 / 4 / 5 / 8;
+}
+
+.article-right {
+    grid-area: 3 / 9 / 5 / 13;
+}
+
+.footer {
+    grid-area: 5 / 4 / 6 / 13;
 }
