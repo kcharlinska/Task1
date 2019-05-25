@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $menu-width;
+    height: 100%;
+    padding: $paddings;
+    background-color: $menu-bgc;
+}
+
+.wrapper {
+    width: calc(100% - $menu-width);
+    height: 100%;
+    margin-left: $menu-width;
+    padding: $paddings;
+    background-color: $main-bgc;
+}
+
+.wrapper *:not(:first-child) {
+    background-color: $content-bgc;
+}

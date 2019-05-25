@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font: 300 16px/1.4 Verdana, sans-serif;
+  color: #5c5c5c;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  background-color: #cbcbcb;
+}
+
+.wrapper {
+  width: calc(100% - $menu-width);
+  height: 100%;
+  margin-left: 20%;
+  padding: 20px;
+  background-color: #e4e4e4;
+}
+
+.wrapper *:not(:first-child) {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
