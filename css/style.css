@@ -13,23 +13,13 @@ html {
 }
 
 body {
-  font: 300 16px/1.2 Verdana, sans-serif;
+  font: 300 16px/1.2 Helvetica, sans-serif;
   color: #5c5c5c;
 }
 
 body {
   width: 100vw;
   min-height: 100vh;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 100%;
-  padding: 20px;
-  background-color: #dadada;
 }
 
 .wrapper {
@@ -46,13 +36,17 @@ body {
   grid-row-gap: 15px;
 }
 
-.wrapper *:not(:first-child) {
+.wrapper .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
   padding: 20px;
-  border-radius: 4px;
-  background-color: #fff;
+  background-color: #dadada;
 }
 
-.header {
+.wrapper .header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -60,7 +54,7 @@ body {
   grid-area: 1 / 1 / 2 / 13;
 }
 
-.box {
+.wrapper .box {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   -ms-grid-column: 5;
@@ -68,7 +62,7 @@ body {
   grid-area: 2 / 5/ 3 / 9;
 }
 
-.aside {
+.wrapper .aside {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
@@ -76,7 +70,7 @@ body {
   grid-area: 3 / 1 / 6 / 3;
 }
 
-.article-left {
+.wrapper .article-left {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
@@ -84,7 +78,7 @@ body {
   grid-area: 3 / 4 / 5 / 8;
 }
 
-.article-right {
+.wrapper .article-right {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   -ms-grid-column: 9;
@@ -92,11 +86,17 @@ body {
   grid-area: 3 / 9 / 5 / 13;
 }
 
-.footer {
+.wrapper .footer {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   -ms-grid-column: 4;
   -ms-grid-column-span: 9;
   grid-area: 5 / 4 / 6 / 13;
+}
+
+.wrapper *:not(:first-child) {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
